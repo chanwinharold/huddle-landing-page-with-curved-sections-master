@@ -1,67 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="./src/output.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
 </head>
 <body>
-  Try it free
+    <header class="max-sm:px-5 sm:px-15 pt-10 flex justify-between">
+        <img class="max-sm:max-w-30" src="images/logo.svg" alt="logo">
+        <button class="text-customPink border px-6 py-2 rounded-full hover:shadow-md">Try it free</button>
+    </header>
 
-  Build The Community Your Fans Will Love
+    <main>
+        <section class="max-sm:px-5 sm:px-15 flex flex-col items-center gap-15">
+            <article class="flex flex-col items-center gap-5">
+                <h1 class="text-3xl text-center font-extrabold">Build The Community Your Fans Will Love</h1>
+                <p class="max-w-lg text-center">
+                    Huddle re-imagines the way we build communities. You have a voice, but so does
+                    your audience. Create connections with your users as you engage in genuine discussion.
+                </p>
+                <button class="text-white border bg-customPink hover:bg-customLightPink px-8 py-4 font-semibold rounded-full hover:shadow-lg">Get Started For Free</button>
+            </article>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+            <img class="images sm:w-[70vw]" src="images/screen-mockups.svg" alt="screen mockups">
 
-  Get Started For Free
+            <article class="min-w-full flex max-sm:flex-col items-center gap-10 justify-around">
+                <div class="flex flex-col gap-5">
+                    <img class="w-8" src="images/icon-communities.svg" alt="communities">
+                    <strong class="text-5xl">1.4k+</strong>
+                    <span class="text-center">Communities Formed</span>
+                </div>
 
-  1.4k+
-  Communities Formed
+                <div class="flex flex-col gap-5">
+                    <img class="w-8" src="images/icon-messages.svg" alt="messages">
+                    <strong class="text-5xl">2.7m+</strong>
+                    <span class="text-center">Messages Sent</span>
+                </div>
+            </article>
+        </section>
 
-  2.7m+
-  Messages Sent
 
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+        <section class="bg-customVeryPaleBlue max-sm:p-5 sm:p-15 flex max-sm:flex-col flex-row-reverse justify-between items-center gap-15">
+            <img class="images" src="images/illustration-grow-together.svg" alt="illustration-grow-together">
+            <article class="flex flex-col max-sm:text-center gap-5">
+                <h2 class="text-2xl font-bold">Grow Together</h2>
+                <p>
+                    Generate meaningful discussions with your audience and build a strong, loyal community.
+                    Think of the insightful conversations you miss out on with a feedback form.
+                </p>
+            </article>
+        </section>
 
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
+        <section class="max-sm:p-5 sm:p-15 flex max-sm:flex-col justify-between items-center gap-15">
+            <img class="images" src="images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation">
+            <article class="flex flex-col max-sm:text-center gap-5">
+                <h2 class="text-2xl font-bold">Flowing Conversations</h2>
+                <p>
+                    You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+                    just-in-time loading for a more natural flow.
+                </p>
+            </article>
+        </section>
 
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
+        <section class="bg-customVeryPaleBlue max-sm:p-5 sm:p-15 flex max-sm:flex-col flex-row-reverse justify-between items-center gap-15">
+            <img class="images" src="images/illustration-your-users.svg" alt="illustration-your-users">
+            <article class="flex flex-col max-sm:text-center gap-5">
+                <h2 class="text-2xl font-bold">Your Users</h2>
+                <p>
+                    It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+                    once signed in to your app, your users can start chatting immediately.
+                </p>
+            </article>
+        </section>
 
-  Ready To Build Your Community?
-  Get Started For Free
+        <section class="max-sm:p-5 sm:p-15 flex flex-col gap-10 items-center">
+            <h2 class="text-2xl font-extrabold text-center">Ready To Build Your Community?</h2>
+            <button class="w-fit text-white font-semibold bg-customPink hover:bg-customLightPink px-6 py-4 rounded-full hover:shadow-lg">Get Started For Free</button>
+        </section>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
+    </main>
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
+    <footer class="max-sm:p-5 sm:p-15 flex max-sm:flex-col-reverse justify-between gap-30 p-2 text-white">
+        <section class="flex flex-col gap-5">
+            <img class="w-50" src="images/logoWhite.png" alt="logo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+                vestibulum a, ultrices quis sem.
+            </p>
+            <p class="flex gap-3">
+                <img class="w-4" src="images/icon-phone.svg" alt="phone">
+                <span>Phone: +1-543-123-4567</span>
+            </p>
+            <p class="flex gap-3">
+                <img class="w-4" src="images/icon-email.svg" alt="email">
+                <a href="#">example@huddle.com</a>
+            </p>
+            <nav class="flex gap-5 mt-5">
+                <a href="#"><img class="w-8 hover:bg-white" src="images/facebook.svg" alt="facebook"></a>
+                <a href="#"><img class="w-8 hover:bg-white" src="images/instagram.svg" alt="instagram"></a>
+                <a href="#"><img class="w-8 hover:bg-white" src="images/twitter.svg" alt="twitter"></a>
+            </nav>
+        </section>
 
-  Subscribe
+        <section class="flex flex-col gap-10">
+            <div class="flex flex-col gap-3">
+                <strong class="text-2xl uppercase">Newsletter</strong>
+                <p>
+                    To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+                    send you spam or pass on your email address
+                </p>
+            </div>
+            <form class="flex max-sm:flex-col max-sm:items-end gap-2" method="get" action="">
+                <label>
+                    <input class="pl-2 bg-white text-black h-10 w-[100%] rounded-sm" type="email" name="email">
+                    <span class="hidden text-customLightRed text-xs">Check a valid email please</span>
+                </label>
+                <button class="text-white font-semibold bg-customPink hover:bg-customLightPink px-6 h-10 rounded-md" type="submit">Suscribe</button>
+            </form>
+        </section>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    </footer>
 </body>
 </html>

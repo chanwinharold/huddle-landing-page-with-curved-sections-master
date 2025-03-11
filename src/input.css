@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme base {
+    /*Primary*/
+
+    --color-customPink: hsl(322, 100%, 66%);
+    --color-customLightPink: hsl(321, 100%, 78%);
+    --color-customLightRed: hsl(0, 100%, 63%);
+
+    /*Neutral*/
+
+    --color-customVeryDarkCyan: hsl(192, 100%, 9%);
+    --color-customVeryPaleBlue: hsl(207, 100%, 98%);
+
+}
+
+@layer base {
+    body {
+        font-family: Poppins, sans-serif;
+
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6rem;
+        }
+        footer {
+            background: var(--color-customVeryDarkCyan);
+        }
+
+
+        form {
+            input:not(:focus):invalid {
+                & + span {
+                     display: inline !important;
+                }
+            }
+        }
+    }
+    .images { @apply sm:w-xs md:w-sm lg:w-md xl:w-xl; }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
